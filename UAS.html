@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dilan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>DILAN</h2>
+    <nav>
+      <a onclick="showSection('home')">Home</a>
+      <a onclick="showSection('profile')">Profile</a>
+      <a onclick="showSection('project')">Karya</a>
+      <a onclick="showSection('media')">Media</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+
+    <section id="home" class="section active">
+      <h1>Hi, I'm Dilan 👋</h1>
+      <p>
+        Website portfolio pribadi berbasis HTML, CSS, dan JavaScript.
+      </p>
+      <button onclick="toggleTheme()">🌙 Toggle Mode</button>
+    </section>
+
+    <section id="profile" class="section">
+      <h1>Profile</h1>
+      <img src="o.jpeg" class="profile-img">
+
+      <p>
+        Saya adalah mahasiswa jurusan Sistem Informasi yang mempelajari
+        pengembangan sistem, website, dan pemanfaatan teknologi informasi.
+      </p>
+
+      <p>
+        Website ini dibuat sebagai portfolio untuk menampilkan
+        dokumentasi, karya, serta media pendukung.
+      </p>
+    </section>
+
+    <section id="project" class="section">
+      <h1>Karya</h1>
+      <p>Screenshot hasil tugas dan project:</p>
+
+      <div class="gallery">
+        <img src="ss tugas.png">
+        <img src="tugas01.png">
+        <img src="tugas02.png">
+      </div>
+    </section>
+
+    <section id="media" class="section">
+      <h1>Media</h1>
+
+      <h3>Galeri Foto</h3>
+      <div class="gallery">
+        <img src="k.jpeg">
+        <img src="b.jpeg">
+        <img src="l.jpeg">
+        <img src="karina.jpeg">
+        <img src="iln.jpeg">
+      </div>
+
+      <h3>Video</h3>
+      <video controls width="400">
+        <source src="WhatsApp Video 2025-09-22 at 20.05.56_84bd8d17.mp4" type="video/mp4">
+      </video>
+
+      <video controls width="400">
+        <source src="WhatsApp Video 2026-01-04 at 20.14.41.mp4" type="video/mp4">
+      </video>
+
+      <h3>Lagu</h3>
+      <audio controls>
+        <source src="letdown.aac" type="audio/mpeg">
+      </audio>
+
+      <audio controls>
+        <source src="all to well.aac" type="audio/mpeg">
+      </audio>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

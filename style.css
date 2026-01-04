@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  transition: 0.3s;
+}
+
+.light {
+  background: #f8fafc;
+  color: #020617;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #020617;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  margin: 15px 0;
+  cursor: pointer;
+  color: #cbd5f5;
+}
+
+.sidebar nav a:hover {
+  color: #38bdf8;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.section {
+  display: none;
+  animation: fade 0.5s ease;
+}
+
+.section.active {
+  display: block;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+video, audio {
+  display: block;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.zoom {
+  transform: scale(1.7);
+  z-index: 99;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
